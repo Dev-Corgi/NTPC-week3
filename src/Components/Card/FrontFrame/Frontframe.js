@@ -21,9 +21,6 @@ function Frontframe () {
   }
 
   const handleSignIn = () =>{
-    console.log(emailRef.current.inputValue)
-    console.log(passwordRef.current.inputValue)
-    console.log(userCtx.userDatas)
     if(userCtx.userDatas[emailRef.current.inputValue] != null){
       if(userCtx.userDatas[emailRef.current.inputValue] == passwordRef.current.inputValue){
         errorCtx.setsuccess(true);
@@ -31,13 +28,11 @@ function Frontframe () {
 
       else{
        errorCtx.seterrorMessage("비밀번호가 틀렸어요!");
-       console.log(userCtx.userDatas)
       }
     }
 
     else{
       errorCtx.seterrorMessage("등록된 유저가 아니에요!");
-      console.log(userCtx.userDatas)
     }
   }
 
