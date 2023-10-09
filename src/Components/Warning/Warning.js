@@ -22,8 +22,8 @@ const Warning = ({ errorMessage }) => {
   }
 
   return (
-    <>
-      {ReactDOM.createPortal(
+        //ReactDOM.createPortal을 이용해서
+        //message-root 아래에 이 컴포넌트를 랜딩하세요
         <div className={styles.body}>
         <div className={styles.background}/>
           <div className={styles.errorFrame} ref = {errorRef}>
@@ -33,10 +33,6 @@ const Warning = ({ errorMessage }) => {
             <div className={styles.message}>{errorMessage}</div>
           </div>
           </div>
-          ,
-        document.getElementById("message-root")
-      )}
-    </>
   );
 };
 

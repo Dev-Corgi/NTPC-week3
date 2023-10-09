@@ -15,8 +15,8 @@ const Success = () => {
   }, [])
 
   return (
-    <>
-      {ReactDOM.createPortal(
+    //ReactDOM.createPortal을 이용해서
+    //message-root 아래에 이 컴포넌트를 랜딩하세요
         <div className={styles.body}>
         <div className={styles.background}/>
           <div className={styles.successFrame} ref = {successRef}>
@@ -25,10 +25,6 @@ const Success = () => {
             <div className={styles.message}>멋져요~! 시험기간에 수고 많으셨습니다!</div>
           </div>
           </div>
-          ,
-        document.getElementById("message-root")
-      )}
-    </>
   );
 };
 

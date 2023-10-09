@@ -1,15 +1,10 @@
 import styles from "./FrontFrame.module.css";
 import Button from "../../Button/Button";
 import InputField from "../../InputField/InputField";
-import SpinContext from "../../../store/SpinContext";
-import UserContext from "../../../store/UserContext";
-import ErrorContext from "../../../store/ErrorContext";
 import React,{useContext,useRef} from "react";
 function Frontframe () {
 
-  const spinCtx = useContext(SpinContext)
-  const userCtx = useContext(UserContext)
-  const errorCtx = useContext(ErrorContext)
+  //spinCtx, userCtx, errorCtx를 사용할 수 있도록 store에 있는 context들을 import하여 useContext로 연동해 보세요
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);

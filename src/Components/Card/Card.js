@@ -3,7 +3,7 @@ import Frontframe from "./FrontFrame/Frontframe";
 import Backframe from "./BackFrame/Backframe";
 import React,{useRef,useEffect,useState} from "react";
 import SpinContext from "../../store/SpinContext";
-import UserContext from "../../store/UserContext";
+//이 파일은 수정할 부분이 없습니다
 function Card() {
   const cardRef = useRef(null)
   const [faceState, setfaceState] = useState("front")
